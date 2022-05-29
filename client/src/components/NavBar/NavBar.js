@@ -4,7 +4,7 @@ export default function NavBar () {
 
     return (
         <nav>
-            <a > Home</a>
+            <a> Home</a>
             <a> Login </a>
         </nav>
     )

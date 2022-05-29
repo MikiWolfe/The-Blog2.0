@@ -17,8 +17,6 @@ app.use(
 );
 app.use(cors());
 
-const { authMiddlewear } = require("./utils/auth");
-
 if (process.env.NODE_ENV === "production") {
     app.use(express.static(path.join(__dirname, "../client/build")));
   }
@@ -29,7 +27,7 @@ if (process.env.NODE_ENV === "production") {
   
   // Listening 
   db.once('open', () => {
-    app.listen(PORT, () => console.log(`🌍 Now listening on http://localhost:${PORT}`));
+    app.listen(PORT, () => console.log(`🚀 Now listening on http://localhost:${PORT}`));
   });
   
   // 404 Error
